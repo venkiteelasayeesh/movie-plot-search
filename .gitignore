@@ -1,0 +1,11 @@
+__pycache__/
+.venv/
+.env
+.DS_Store
+.ipynb_checkpoints/
+
+# generated artifacts
+artifacts/
+*.npz
+*.joblib
+*.json
