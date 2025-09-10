@@ -8,7 +8,7 @@ Includes a FastAPI endpoint and a simple Python interface.
 ![license](https://img.shields.io/badge/license-MIT-informational)
 
 
-## ✨ Features
+##  Features
 - TF‑IDF vectorization with smart text pre‑processing
 - Cosine similarity ranking
 - FastAPI endpoint: `GET /search?q=...&k=10`
@@ -16,7 +16,7 @@ Includes a FastAPI endpoint and a simple Python interface.
 - Tested with `pytest`
 
 
-## 📂 Data
+##  Data
 Place a CSV at `data/movies.csv` with columns:
 - `title` (str)
 - `plot` (str)
@@ -27,7 +27,7 @@ Place a CSV at `data/movies.csv` with columns:
 > Tip: If your source has different names, adjust `utils.py` mapping.
 
 
-## 🚀 Quickstart
+##  Quickstart
 ```bash
 python -m venv .venv && source .venv/bin/activate # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
@@ -40,3 +40,4 @@ python -m src.indexer --data data/movies.csv --model artifacts/tfidf.joblib --ma
 # run API
 uvicorn api.main:app --reload --port 8000
 # then open: http://127.0.0.1:8000/search?q=time%20travel&k=5
+
